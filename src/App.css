@@ -1,0 +1,150 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #000000;
+  margin: 0;
+  padding: 0;
+  scrollbar-width: thin;
+  scroll-behavior: smooth;
+}
+
+.app {
+  width: 97%;
+  height: max-content;
+  margin: 0px auto;
+  padding: 20px;
+  background-color: #000000;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  /* background: url("Z:\Aquera\star-wars\public\galaxy.jpg"); */
+  /* height: 300vh;  */
+  background-position: center; 
+  /* background-size: cover;  */
+  /* background-repeat:repeat-x; */
+
+  h1{
+    color: #f5f5f5;
+    text-align: center;
+    font-family: "star jedi";
+    letter-spacing: 1px;
+    font-size: 3rem;
+    
+  }
+  h3{
+    color: #f5f5f5;
+    text-align: center;
+    /* font-family: "star jedi"; */
+    font-family: "PP mori";
+    letter-spacing: 1px;
+    font-size: 1.5rem;
+    font-weight:100;
+    margin-top: -20px;
+  }
+}
+
+.planets-container {
+  display: grid;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px;
+  padding: 0 60px;
+  margin-top: 4rem;
+  font-family: "PP mori";
+
+
+  
+}
+
+.planet-card {
+  border: 5px solid #ddd;
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto;
+  /* justify-content: center; */
+  align-items: center;
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+
+  h2{
+    font-size: 2.5rem;
+  }
+
+  p{
+    font-size: 1.3rem;
+  }
+}
+
+.pagination {
+  margin-top: 20px;
+  display: flex;
+  width: 35%;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.pagination button {
+  padding: 10px 20px;
+  margin-right: 10px;
+  cursor: pointer;
+  background-color: #ffffff;
+  color: #000000;
+  border: none;
+  border-radius: 3px;
+
+}
+.pagination button:hover{
+  background-color: #e867fc;
+}
+
+.pagination button.active {
+  background-color: #e867fc;
+}
+
+
+.rotating-loader {
+  border: 8px solid #f3f3f3; 
+  border-top: 8px solid #3498db; 
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 1s linear infinite;
+  margin: auto;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.resident{
+  margin-top: 2rem;
+
+
+  h3{
+  font-family: "star jedi";
+  letter-spacing: 2px;
+  }
+}
+
+.resident ul{
+  display: grid;
+  
+
+}
+
+.resident ul li{
+    text-decoration: none;
+    background-color: #fd6fd7;
+    color: #ffffff;
+    height:25px;
+    margin: 10px 0;
+    /* width: 50%; */
+    font-size: 1.2rem;
+    font-weight: 800;
+}
